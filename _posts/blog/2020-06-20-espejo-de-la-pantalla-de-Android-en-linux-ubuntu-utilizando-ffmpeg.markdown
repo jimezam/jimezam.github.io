@@ -2,7 +2,7 @@
 layout: post
 title:  "Espejo de la pantalla de Android en Linux Ubuntu utilizando FFmpeg"
 date:   2020-06-20 18:55:00 -0500
-categories: mobile
+categories: Mobile
 tags: android linux
 ---
 

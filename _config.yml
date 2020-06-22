@@ -35,6 +35,8 @@ github_username:  jimezam
 youtube_username: jimezam
 rss: rss
 
+permalink: /blog/:year/:month/:day/:title
+
 # Build settings
 theme: minima
 plugins:
