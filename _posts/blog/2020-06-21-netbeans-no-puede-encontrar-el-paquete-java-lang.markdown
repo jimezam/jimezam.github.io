@@ -6,11 +6,15 @@ categories: Development
 tags: linux java netbeans
 ---
 
-# Descripción del problema
+## Descripción del problema
 
 Con las versiones recientes de Apache Netbeans (v11 en adelante) frecuentemente encuentro problemas al actualizarlas ya que el IDE parece no reconocer las clases base del API de Java, mostrándo el mensaje `Fatal Error: Unable to find package java.lang in classpath or bootclasspath`.
 
-# Solución propuesta
+## Causa del problema
+
+Netbeans está buscando los archivos de las clases nativas de Java en ubicaciones incorrectas.
+
+## Solución propuesta
 
 La solución a este problema es muy simple, consiste en indicarle correctamente a Netbeans donde se encuentra la distribución del JDK que se desea utilizar.
 

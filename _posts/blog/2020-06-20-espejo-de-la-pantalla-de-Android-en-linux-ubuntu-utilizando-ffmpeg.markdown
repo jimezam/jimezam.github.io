@@ -11,13 +11,13 @@ https://jekyllrb.com/docs/configuration/markdown/
 https://kramdown.gettalong.org/syntax.html
 -->
 
-# Introducción
+## Introducción
 
 ![Pantalla en espejo de un teléfono Android](/assets/images/2020-06-20/Android Launcher.png "Pantalla en espejo de un teléfono Android"){:width="130" style='float: right;'}
 
 En esta publicación se describen los pasos necesarios para visualizar (*mirror*) la pantalla de un teléfono Android conectado a través del puerto USB a un computador con Linux Ubuntu.  Esta visualización es de sólo lectura, es decir, no permite interactuar con el teléfono desde el computador, solamente visualizar lo que en un momento determinado se encuentre desplegando en su pantalla.
 
-# Prerequisitos
+## Prerequisitos
 
 Se requiere la instalación del `Android Debug Bridge (adb)`, `FFmpeg` y de un cliente de video, ya sea `ffplay` (incluido en el paquete anterior) o `mplayer`.
 
@@ -44,7 +44,7 @@ List of devices attached
 ce080808fcd01a0900	device
 ```
 
-# Procedimiento
+## Procedimiento
 
 La ejecución el comando se realiza de la siguiente manera.
 
