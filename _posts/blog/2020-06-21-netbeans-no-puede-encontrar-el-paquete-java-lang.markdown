@@ -2,8 +2,8 @@
 layout: post
 title:  "Netbeans no puede encontrar el paquete java.lang"
 date:   2020-06-21 23:39:00 -0500
-categories: Development
-tags: linux java netbeans
+categories: Java
+tags: linux java netbeans development
 ---
 
 ## Descripción del problema

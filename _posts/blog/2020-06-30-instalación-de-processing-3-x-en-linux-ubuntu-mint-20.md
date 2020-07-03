@@ -2,8 +2,8 @@
 layout: post
 title: Instalación de Processing 3.x en Linux Ubuntu/Mint 20
 date: 2020-06-30 15:25 -0500
-categories: Development
-tags: linux processing installation gnome cinnamon
+categories: Processing
+tags: linux processing installation gnome cinnamon development
 ---
 
 ![Processing.org](/assets/images/2020-06-30/Processing.png "Processing.org"){:width="100%" style='margin:auto; display:block'}

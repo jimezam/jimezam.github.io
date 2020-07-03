@@ -2,8 +2,8 @@
 layout: post
 title: 'Problemas de autenticación con MySQL 8.x: ER_NOT_SUPPORTED_AUTH_MODE'
 date: 2020-06-30 12:34 -0500
-categories: Development
-tags: linux windows mysql authentication
+categories: MySQL
+tags: linux windows mysql authentication nodejs development
 ---
 
 ## Descripción del problema
@@ -73,7 +73,7 @@ $ docker run -d -p 3306:3306 \
              my_image_mysql8
 ```
 
-En caso de utilizarse *Docker Compose* para la gestión de los contenedores, se tendrá que agregar la siguiente instrucción al servicio de la base de datos.
+En caso de utilizarse *Docker Compose* para la gestión de los contenedores, se tendrá que agregar la siguiente instrucción al servicio de la base de datos en el archivo `docker-compose.yml`.
 
 ```
 command: --default-authentication-plugin=mysql_native_password

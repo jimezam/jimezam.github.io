@@ -2,8 +2,8 @@
 layout: post
 title:  "Problemas accediendo a la cámara web en Processing desde Linux"
 date:   2020-06-10 18:55:00 -0500
-categories: Development
-tags: linux video processing v4l2src gstreamer
+categories: Processing
+tags: linux video processing v4l2src gstreamer development
 ---
 
 ## Descripción del problema
