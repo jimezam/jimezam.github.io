@@ -3,7 +3,7 @@ layout: post
 title: Leer, mostrar y guardar imágenes con OpenCV en Python
 date: 2020-07-02 23:55 -0500
 categories: Python
-tags: linux windows development python opencv images
+tags: linux windows development python opencv image
 ---
 
 ## Introducción
