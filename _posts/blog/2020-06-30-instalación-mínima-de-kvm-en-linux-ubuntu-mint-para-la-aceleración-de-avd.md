@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instalación mínima de KVM en Ubuntu/Mint 20 para la aceleración de AVD
+title: Instalación mínima de KVM en Linux Ubuntu/Mint para la aceleración de AVD
 date: 2020-06-30 01:31 -0500
 categories: Android
 tags: linux kvm avd android mobile development

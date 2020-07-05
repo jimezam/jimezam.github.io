@@ -10,7 +10,7 @@ tags: linux windows development python opencv image video
 
 A continuación se describe el proceso en Python utilizando OpenCV necesario para mostrar un video en pantalla, proveniente de un archivo o de una cámara web, y eventualmente procesar cada uno de sus fotogramas.
 
-Para revisar la versión completa del código, revise su correspondiente [repositorio](https://github.com/jimezam/Examples-of-OpenCV-with-Python/blob/master/2.%20Show%20video/show_video.py).  En esta versión se muestra el video a color y en blanco y negro, y permite el almacenamiento de los fotogramas cuando se presiona la letra 's'.
+Para revisar la versión completa del código, revise su correspondiente [repositorio](https://github.com/jimezam/Examples-of-Python/blob/master/OpenCV%2C%20show%20video/show_video.py).  En esta versión se muestra el video a color y en blanco y negro, y permite el almacenamiento de los fotogramas cuando se presiona la letra 's'.
 
 ## Seleccionar el origen del video
 

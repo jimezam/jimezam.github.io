@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instalación de Jekyll en Linux Ubuntu/Mint 20
+title: Instalación de Jekyll en Linux
 date: 2020-06-30 01:13 -0500
 categories: Miscellaneous
 tags: linux jekyll blog

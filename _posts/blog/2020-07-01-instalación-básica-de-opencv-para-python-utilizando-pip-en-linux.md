@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instalación básica de OpenCV para Python 3 utilizando Pip en Linux Ubuntu/Mint 20
+title: Instalación básica de OpenCV para Python utilizando pip en Linux
 date: 2020-07-01 15:55 -0500
 categories: Python
 tags: linux windows development python pip opencv 

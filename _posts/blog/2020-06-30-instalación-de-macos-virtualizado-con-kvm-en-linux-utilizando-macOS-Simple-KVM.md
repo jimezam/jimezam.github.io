@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instalación de MacOS virtualizado con KVM en Ubuntu/Mint 20 utilizando macOS-Simple-KVM
+title: Instalación de MacOS virtualizado con KVM en Linux utilizando macOS-Simple-KVM
 date: 2020-06-30 02:26 -0500
 categories: MacOS
 tags: macos virtualization kvm qemu linux

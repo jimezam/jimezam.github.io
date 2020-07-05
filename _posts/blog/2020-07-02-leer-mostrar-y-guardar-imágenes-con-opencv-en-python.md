@@ -12,7 +12,7 @@ A continuación se describe el proceso en Python utilizando OpenCV necesario par
 
 ![Imagen a color y monocromática](/assets/images/2020-07-03/color-mono.png "Imagen a color y monocromática"){:width="66%" style='margin:auto; display:block'}
 
-Para revisar la versión completa del código, revise su correspondiente [repositorio](https://github.com/jimezam/Examples-of-OpenCV-with-Python/tree/master/1.%20Load%20and%20save%20images).
+Para revisar la versión completa del código, revise su correspondiente [repositorio](https://github.com/jimezam/Examples-of-Python/tree/master/OpenCV%2C%20load%20and%20save%20images).
 
 ## Leer imágenes de disco
 
