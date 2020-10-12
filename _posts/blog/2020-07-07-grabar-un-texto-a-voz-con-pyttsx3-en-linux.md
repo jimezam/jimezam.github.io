@@ -16,7 +16,7 @@ Para acceder a la versión completa del código, consulte el [repositorio](https
 
 ## Requerimientos
 
-Bajo Linux se requiere contar con la instalación de [eSpeak]({% post_url 2020-07-04-iniciando-text-to-speech-con-pyttsx3-en-linux %}) y FFmpeg.
+Bajo Linux se requiere contar con la instalación de [eSpeak]({% post_url blog/2020-07-04-iniciando-text-to-speech-con-pyttsx3-en-linux %}) y FFmpeg.
 
 ```
 $ sudo apt install ffmpeg
