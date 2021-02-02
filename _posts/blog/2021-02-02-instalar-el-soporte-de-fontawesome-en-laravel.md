@@ -18,7 +18,7 @@ Instalar la librería que da soporte a los íconos de FontAwesome.
 $ npm install @fortawesome/fontawesome-free --save
 ```
 
-Referenciar lps estilos de la librería de FontAwesome.
+Referenciar los estilos de la librería de FontAwesome, agregando el siguiente contenido al final del archivo de configuración.
 
 ```
 $ vi resources/sass/app.scss
@@ -39,6 +39,6 @@ $ npm run dev
 ## Recursos
 
 - Íconos de FontAwesome  
-  https://fontawesome.com/icons?d=gallery
+  [https://fontawesome.com/icons?d=gallery](https://fontawesome.com/icons?d=gallery)
 - Install FontAwesome Using a Package Manager  
-  https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers
+  [https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers](https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers)
