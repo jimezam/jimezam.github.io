@@ -145,8 +145,8 @@ $ conda remove --name NOMBRE --all
 ## Recursos
 
 - Managing environments  
-  https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+  [https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 - Command reference  
-  https://conda.io/projects/conda/en/latest/commands.html
+  [https://conda.io/projects/conda/en/latest/commands.html](https://conda.io/projects/conda/en/latest/commands.html)
 - Cheat sheet  
-  https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html
+  [https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html](https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)

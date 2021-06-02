@@ -110,8 +110,8 @@ $ conda update anaconda
 ## Recursos
 
 - Installing on Linux  
-  https://docs.anaconda.com/anaconda/install/linux/
+  [https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
 - Verifying your installation  
-  https://docs.anaconda.com/anaconda/install/verify-install/
+  [https://docs.anaconda.com/anaconda/install/verify-install/](https://docs.anaconda.com/anaconda/install/verify-install/)
 - Anconda Installers  
-  https://www.anaconda.com/products/individual#Downloads
+  [https://www.anaconda.com/products/individual#Downloads](https://www.anaconda.com/products/individual#Downloads)
