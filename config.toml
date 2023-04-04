@@ -60,10 +60,12 @@ enableRobotsTXT = true
 
   # You can use this to inject any HTML in the <head> tag.
   # Ideal usecase for this is to import custom js/css or add your analytics snippet
-  customHeadHTML = ""
+  customHeadHTML = '''
+    <link rel="stylesheet" href="/css/my_styles.css">
+  '''
 
   # Keywords relevant for SEO
-  metaKeywords = ["blog", "software", "development", "linux", "docker", "opencv"]
+  metaKeywords = ["blog", "software", "development", "linux"]
 
   # If you want to display posts on the homepage, the options are
   # "popular" (order posts by weight), "recent" (order posts by date)
