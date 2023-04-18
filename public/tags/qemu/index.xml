@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qemu on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/qemu/</link>
+    <description>Recent content in qemu on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 30 Jun 2020 02:26:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/qemu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM</title>
+      <link>https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/</link>
+      <pubDate>Tue, 30 Jun 2020 02:26:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/</guid>
+      <description>Introducción En esta publicación se describen los pasos necesarios para instalar distintas versiones de MacOS en una máquina virtual KVM en Linux Ubuntu/Mint 20 con el fin de explorar las capacidades de virtualización del sistema operativo.
+Para esto se utilizan los scripts provistos por el proyecto macOS-Simple-KVM, los cuales facilitan en gran medida este proceso.
+Requerimientos Procesador Intel o AMD con capacidad de virtualización (SSE 4.2). Se sugiere como un Ivy Bridge (o posterior), Xeon o Ryzen.</description>
+    </item>
+    
+  </channel>
+</rss>

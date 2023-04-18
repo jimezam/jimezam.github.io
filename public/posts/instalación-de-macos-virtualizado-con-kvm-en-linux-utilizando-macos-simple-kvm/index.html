@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM</title>
+    <meta name="description" content="Bigger on the inside">
+    <meta name="keywords" content='blog, software, development, linux, macos, kvm, qemu, virtualization'>
+
+    <meta property="og:url" content="https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM">
+    <meta property="og:description" content="Bigger on the inside">
+    <meta property="og:image" content="https://jimezam.github.io/MacOS%20-%20Catalina%20-%20KVM.png">
+    <meta property="og:image:secure_url" content="https://jimezam.github.io/MacOS%20-%20Catalina%20-%20KVM.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM">
+    <meta name="twitter:description" content="Bigger on the inside">
+    <meta property="twitter:domain" content="https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/">
+    <meta property="twitter:url" content="https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/">
+    <meta name="twitter:image" content="https://jimezam.github.io/MacOS%20-%20Catalina%20-%20KVM.png">
+
+    
+    <link rel="canonical" href="https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/" />
+
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://jimezam.github.io//css/dark.css">
+
+    <script src="https://jimezam.github.io//js/svg-injector.min.js"></script>
+    <script src="https://jimezam.github.io//js/feather-icons.min.js"></script>
+    <script src="https://jimezam.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="/css/my_styles.css">
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://jimezam.github.io/">
+                <img src="https://jimezam.github.io/images/logo.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://jimezam.github.io/">Jorge I. Meza</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            junio 30, 2020
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/macos">macos</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/kvm">kvm</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/qemu">qemu</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/virtualization">virtualization</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <figure><img src="MacOS%20-%20Catalina%20-%20KVM.png"
+         alt="MacOS Catalina" width="100%"/>
+</figure>
+
+<h2 id="introducción">Introducción</h2>
+<p>En esta publicación se describen los pasos necesarios para instalar distintas versiones de MacOS en una máquina virtual KVM en Linux Ubuntu/Mint 20 con el fin de explorar las capacidades de virtualización del sistema operativo.</p>
+<p>Para esto se utilizan los <em>scripts</em> provistos por el proyecto <a href="https://github.com/foxlet/macOS-Simple-KVM.git">macOS-Simple-KVM</a>, los cuales facilitan en gran medida este proceso.</p>
+<h2 id="requerimientos">Requerimientos</h2>
+<ul>
+<li>Procesador Intel o AMD con capacidad de virtualización (SSE 4.2).  Se sugiere como un Ivy Bridge (o posterior), Xeon o Ryzen.</li>
+<li>Se requiere espacio en disco suficiente para almacenar la distribución de MacOS (~500MB comprimidos, 2GB descomprimidos), los archivos de la instalación (~6.5GB) y el disco duro que se cree para la máquina virtual (mínimo 20GB pero se recomiendan 64GB o más).</li>
+</ul>
+<h2 id="procedimiento">Procedimiento</h2>
+<p>Instalar los paquetes necesarios del sistema operativo.</p>
+<pre tabindex="0"><code>$ sudo apt-get install qemu-system qemu-utils python3 python3-pip
+</code></pre><p>Clonar el repositorio de <code>macOS-Simple-KVM</code> el cual incluye los <em>scripts</em> de apoyo para realizar la instalación.</p>
+<pre tabindex="0"><code>$ git clone https://github.com/foxlet/macOS-Simple-KVM.git
+
+$ cd macOS-Simple-KVM/
+</code></pre><p>Descargar los medios de instalación de MacOS, las opciones disponibles son <code>--high-sierra</code>, <code>--mojave</code> y <code>--catalina</code> además del reciente <code>--big-sur</code> el cual aún no está del todo disponible (ver <a href="https://github.com/foxlet/macOS-Simple-KVM/issues/250">issue #1</a> y <a href="https://github.com/CloverHackyColor/CloverBootloader/issues/190">issue #2</a>).</p>
+<pre tabindex="0"><code>$ ./jumpstart.sh --catalina
+</code></pre><p>Crear un disco duro virtualizado en el cual se instalará el sistema operativo y los archivos del usuario.  Ajustar el tamaño como se considere conveniente.</p>
+<pre tabindex="0"><code>$ qemu-img create -f qcow2 MyDisk.qcow2 64G
+</code></pre><p>Agregar el disco duro recién creado a la configuración de la máquina virtual, para hacer esto se deben agregar las siguientes líneas al final del archivo <code>basic.sh</code>.</p>
+<pre tabindex="0"><code>$ vi basic.sh
+
+    -drive id=SystemDisk,if=none,file=MyDisk.qcow2 \
+    -device ide-hd,bus=sata.4,drive=SystemDisk \
+</code></pre><p>Iniciar la máquina virtual para proceder con la instalación del sistema operativo en la misma.</p>
+<pre tabindex="0"><code>$ ./basic.sh
+</code></pre><h2 id="recursos">Recursos</h2>
+<ol>
+<li>Proyecto macOS-Simple-KVM<br>
+<a href="https://github.com/foxlet/macOS-Simple-KVM.git">https://github.com/foxlet/macOS-Simple-KVM.git</a></li>
+<li>FAQ en macOS-Simple-KVM<br>
+<a href="https://github.com/foxlet/macOS-Simple-KVM/blob/master/docs/FAQs.md">https://github.com/foxlet/macOS-Simple-KVM/blob/master/docs/FAQs.md</a></li>
+<li>How To run macOS on KVM / QEMU<br>
+<a href="https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/">https://computingforgeeks.com/how-to-run-macos-on-kvm-qemu/</a></li>
+<li>🤜 macOS-Simple-KVM 🤛<br>
+<a href="https://www.youtube.com/watch?v=9vuLDVgeJKQ">https://www.youtube.com/watch?v=9vuLDVgeJKQ</a></li>
+<li>KVM en ArchLinux<br>
+<a href="https://wiki.archlinux.org/index.php/KVM">https://wiki.archlinux.org/index.php/KVM</a></li>
+<li>QEMU en ArchLinux<br>
+<a href="https://wiki.archlinux.org/index.php/QEMU">https://wiki.archlinux.org/index.php/QEMU</a></li>
+<li>PCI passthrough via OVMF<br>
+<a href="https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF">https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF</a></li>
+<li>KVM Host/Guest Performance Optimizations<br>
+<a href="https://nixhaven.com/index.php?threads/kvm-host-guest-performance-optimizations.14/">https://nixhaven.com/index.php?threads/kvm-host-guest-performance-optimizations.14/</a></li>
+</ol>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/">
+            &#8592;
+            :
+            Espejo de la pantalla de Android en Linux Utilizando FFmpeg
+        </a>
+    </p>
+    <p class="prev-post-date">
+        junio 20, 2020
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/">
+            :
+            Instalación básica de OpenCV para Python utilizando pip en Linux
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            julio 1, 2020
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introducción">Introducción</a></li>
+        <li><a href="#requerimientos">Requerimientos</a></li>
+        <li><a href="#procedimiento">Procedimiento</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 Dimensionally transcendental</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

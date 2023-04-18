@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vagrant on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/vagrant/</link>
+    <description>Recent content in vagrant on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 29 Jan 2021 21:17:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primeros pasos con Vagrant</title>
+      <link>https://jimezam.github.io/posts/primeros-pasos-con-vagrant/</link>
+      <pubDate>Fri, 29 Jan 2021 21:17:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/primeros-pasos-con-vagrant/</guid>
+      <description>Introducción Vagrant es un gestor de máquinas virtuales que soporta múltiples proveedores (entre ellos Virtualbox) facilitando su construcción (mediante el archivo Vagrantfile), gestión y aprovisionamiento. HashiCorp, la empresa detrás de Vagrant, mantiene un catálogo en línea de imágenes predefinidas que agilizan la creación de las máquinas virtuales.
+En la presente publicación se reseñan los comandos necesarios para realizar la instalación, gestión de cajas, creación y gestión de máquinas virtuales, así como consultar su información.</description>
+    </item>
+    
+  </channel>
+</rss>

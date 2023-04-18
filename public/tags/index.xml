@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/</link>
+    <description>Recent content in Tags on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 20 Feb 2021 23:06:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://jimezam.github.io/tags/linux/</link>
+      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pip</title>
+      <link>https://jimezam.github.io/tags/pip/</link>
+      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/pip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://jimezam.github.io/tags/python/</link>
+      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>venv</title>
+      <link>https://jimezam.github.io/tags/venv/</link>
+      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/venv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vagrant</title>
+      <link>https://jimezam.github.io/tags/vagrant/</link>
+      <pubDate>Fri, 29 Jan 2021 21:17:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/vagrant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://jimezam.github.io/tags/windows/</link>
+      <pubDate>Fri, 29 Jan 2021 21:17:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://jimezam.github.io/tags/android/</link>
+      <pubDate>Tue, 21 Jul 2020 11:52:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macos</title>
+      <link>https://jimezam.github.io/tags/macos/</link>
+      <pubDate>Tue, 21 Jul 2020 11:52:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile</title>
+      <link>https://jimezam.github.io/tags/mobile/</link>
+      <pubDate>Tue, 21 Jul 2020 11:52:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scrcpy</title>
+      <link>https://jimezam.github.io/tags/scrcpy/</link>
+      <pubDate>Tue, 21 Jul 2020 11:52:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/scrcpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opencv</title>
+      <link>https://jimezam.github.io/tags/opencv/</link>
+      <pubDate>Wed, 01 Jul 2020 15:55:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kvm</title>
+      <link>https://jimezam.github.io/tags/kvm/</link>
+      <pubDate>Tue, 30 Jun 2020 02:26:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/kvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qemu</title>
+      <link>https://jimezam.github.io/tags/qemu/</link>
+      <pubDate>Tue, 30 Jun 2020 02:26:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/qemu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualization</title>
+      <link>https://jimezam.github.io/tags/virtualization/</link>
+      <pubDate>Tue, 30 Jun 2020 02:26:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://jimezam.github.io/tags/ffmpeg/</link>
+      <pubDate>Sat, 20 Jun 2020 18:55:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Primeros pasos con Vagrant</title>
+    <meta name="description" content="Bigger on the inside">
+    <meta name="keywords" content='blog, software, development, linux, vagrant, windows'>
+
+    <meta property="og:url" content="https://jimezam.github.io/posts/primeros-pasos-con-vagrant/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Primeros pasos con Vagrant">
+    <meta property="og:description" content="Bigger on the inside">
+    <meta property="og:image" content="https://jimezam.github.io/images/logo.png">
+    <meta property="og:image:secure_url" content="https://jimezam.github.io/images/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Primeros pasos con Vagrant">
+    <meta name="twitter:description" content="Bigger on the inside">
+    <meta property="twitter:domain" content="https://jimezam.github.io/posts/primeros-pasos-con-vagrant/">
+    <meta property="twitter:url" content="https://jimezam.github.io/posts/primeros-pasos-con-vagrant/">
+    <meta name="twitter:image" content="https://jimezam.github.io/images/logo.png">
+
+    
+    <link rel="canonical" href="https://jimezam.github.io/posts/primeros-pasos-con-vagrant/" />
+
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://jimezam.github.io//css/dark.css">
+
+    <script src="https://jimezam.github.io//js/svg-injector.min.js"></script>
+    <script src="https://jimezam.github.io//js/feather-icons.min.js"></script>
+    <script src="https://jimezam.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="/css/my_styles.css">
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://jimezam.github.io/">
+                <img src="https://jimezam.github.io/images/logo.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://jimezam.github.io/">Jorge I. Meza</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Primeros pasos con Vagrant</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            enero 29, 2021
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/vagrant">vagrant</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/windows">windows</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="introducción">Introducción</h1>
+<p>Vagrant es un gestor de máquinas virtuales que soporta múltiples <a href="https://www.vagrantup.com/docs/providers">proveedores</a> (entre ellos Virtualbox) facilitando su construcción (mediante el archivo <code>Vagrantfile</code>), gestión y aprovisionamiento.  HashiCorp, la empresa detrás de Vagrant, mantiene un catálogo en línea de imágenes predefinidas que agilizan la creación de las máquinas virtuales.</p>
+<p>En la presente publicación se reseñan los comandos necesarios para realizar la instalación, gestión de cajas, creación y gestión de máquinas virtuales, así como consultar su información.</p>
+<h1 id="instalación">Instalación</h1>
+<p>Instalar los siguientes paquetes de software de acuerdo con el sistema operativo y arquitectura que se tenga.</p>
+<ul>
+<li>Virtualbox<br>
+<a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
+<li>Vagrant<br>
+<a href="https://www.vagrantup.com/downloads">https://www.vagrantup.com/downloads</a></li>
+</ul>
+<p>Se sugiere descargar e instalar manualmente los paquetes requeridos, no utilizar las versiones disponibles en los repositorios estándar ya que generalmente se encuentran muy desactualizados.</p>
+<h1 id="gestión-de-cajas">Gestión de cajas</h1>
+<p>Las cajas o <em>boxes</em> son imágenes preinstaladas de diferentes sistemas operativos y aplicaciones.</p>
+<h2 id="catálogo">Catálogo</h2>
+<p>HashiCorp, los creadores de Vagrant, mantienen un catálogo de cajas que pueden ser libremente descargadas y utilizadas por los usuarios.</p>
+<ul>
+<li>HashiCorp&rsquo;s Vagrant Cloud box catalog<br>
+<a href="https://app.vagrantup.com/boxes/search">https://app.vagrantup.com/boxes/search</a></li>
+</ul>
+<p>En este catálogo pueden por ejemplo, ubicarse las imágenes oficiales de <a href="https://app.vagrantup.com/ubuntu">Ubuntu</a> y en particular del <a href="https://app.vagrantup.com/ubuntu/boxes/jammy64">último LTS</a>.</p>
+<h2 id="descargar-una-caja-manualmente">Descargar una caja manualmente</h2>
+<pre tabindex="0"><code>$ vagrant box add &lt;NOMBRE&gt;
+</code></pre><p>Por ejemplo:</p>
+<pre tabindex="0"><code>$ vagrant box add ubuntu/jammy64
+</code></pre><h2 id="listar-las-cajas-disponibles-localmente">Listar las cajas disponibles localmente</h2>
+<pre tabindex="0"><code>$ vagrant box list
+</code></pre><h2 id="remover-una-caja-disponible-localmente">Remover una caja disponible localmente</h2>
+<pre tabindex="0"><code>$ vagrant box remove &lt;NOMBRE&gt;
+</code></pre><p>Por ejemplo:</p>
+<pre tabindex="0"><code>$ vagrant box remove ubuntu/jammy64
+</code></pre><h1 id="creación-de-una-máquina-virtual">Creación de una máquina virtual</h1>
+<p>Para crear a una nueva máquina virtual, se debe ubicar en el directorio donde se almacenará la información del proyecto y ejecutar el comando <code>init</code> de la siguiente manera.</p>
+<pre tabindex="0"><code>$ cd &lt;RUTA&gt;/&lt;PROYECTO&gt;
+
+$ vagrant init &lt;NOMBRE&gt;
+</code></pre><p>Siendo <code>&lt;NOMBRE&gt;</code> el identificador de la caja a partir de la cual se desea crear la máquina virtual.</p>
+<p>Por ejemplo:</p>
+<pre tabindex="0"><code>$ vagrant init ubuntu/jammy64
+</code></pre><p>La ejecución de este comando generará un archivo <code>Vagrantfile</code> base que puede personalizarse antes de iniciar la máquina virtual partir de él.</p>
+<p>Una vez se realicen los cambios necesarios en el <code>Vagrantfile</code> es posible validar su contenido antes de intentar iniciar una máquina virtual con él, mediante el siguiente comando.</p>
+<pre tabindex="0"><code>$ vagrant validate
+</code></pre><h1 id="gestionar-las-máquinas-virtuales">Gestionar las máquinas virtuales</h1>
+<p>Para la ejecución de los siguientes comandos es necesario ubicarse en el directorio donde se encuentre el <code>Vagrantfile</code> o especificar el <code>id</code> de la máquina (ver <code>global-status</code>) sobre la cual se desea aplicar el comando.</p>
+<h2 id="iniciar-la-máquina-virtual">Iniciar la máquina virtual</h2>
+<pre tabindex="0"><code>$ vagrant up [&lt;ID&gt;]
+</code></pre><h2 id="detener-la-máquina-virtual">Detener la máquina virtual</h2>
+<pre tabindex="0"><code>$ vagrant halt [&lt;ID&gt;]
+</code></pre><h2 id="recargar-la-máquina-virtual">Recargar la máquina virtual</h2>
+<p>Reinicia la máquina virtual para que se apliquen los cambios hechos sobre el <code>Vagrantfile</code>.</p>
+<pre tabindex="0"><code>$ vagrant reload [&lt;ID&gt;]
+</code></pre><h2 id="destruir-la-máquina-virtual">Destruir la máquina virtual</h2>
+<p>Remueve la máquina virtual y elimina los archivos asociados a esta.</p>
+<pre tabindex="0"><code>$ vagrant destroy [&lt;ID&gt;]
+</code></pre><h2 id="suspenderreanudar-la-máquina-virtual">Suspender/reanudar la máquina virtual</h2>
+<p>Para suspender la máquina virtual, es decir, detenerla &ldquo;congelada&rdquo; manteniendo el estado actual, se debe ejecutar el siguiente comando.</p>
+<pre tabindex="0"><code>$ vagrant suspend [&lt;ID&gt;]
+</code></pre><p>Para continuar el uso de una máquina virtual suspendida, se debe utilizar el siguiente comando.</p>
+<pre tabindex="0"><code>$ vagrant resume [&lt;ID&gt;]
+</code></pre><h2 id="conectarse-a-la-máquina-virtual">Conectarse a la máquina virtual</h2>
+<p>Para realizar una conexión SSH con la máquina virtual, se debe ejecutar el siguiente comando.</p>
+<pre tabindex="0"><code>$ vagrant ssh [&lt;ID&gt;]
+</code></pre><p>Para consultar la información de configuración de SSH de una máquina virtual específica.</p>
+<pre tabindex="0"><code>$ vagrant ssh-config [&lt;ID&gt;]
+</code></pre><h1 id="consultar-acerca-de-las-máquinas-virtuales">Consultar acerca de las máquinas virtuales</h1>
+<h2 id="consultar-la-información-general">Consultar la información general</h2>
+<pre tabindex="0"><code>$ vagrant global-status
+</code></pre><p>Permite consultar la información general de las máquinas virtuales registradas en el servidor.</p>
+<ul>
+<li>Identificador</li>
+<li>Nombre</li>
+<li>Proveedor</li>
+<li>Estado</li>
+<li>Ubicación del <code>Vagrantfile</code></li>
+</ul>
+<h2 id="consultar-la-información-específica">Consultar la información específica</h2>
+<pre tabindex="0"><code>$ vagrant status &lt;ID&gt;
+</code></pre><p>Permite verificar el estado de una máquina virtual de acuerdo con el <code>&lt;ID&gt;</code> especificado.</p>
+<h2 id="consultar-los-puertos-redirigidos">Consultar los puertos redirigidos</h2>
+<p>Permite consultar los puertos que haya sido redirigidos entre la máquina virtual y la máquina anfitrión.</p>
+<pre tabindex="0"><code>$ vagrant port [&lt;ID&gt;]
+</code></pre><h1 id="recursos">Recursos</h1>
+<ul>
+<li>Vagrant Documentation<br>
+<a href="https://www.vagrantup.com/docs">https://www.vagrantup.com/docs</a></li>
+</ul>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/">
+            &#8592;
+            :
+            Espejo de la pantalla de Android en Linux Ubuntu utilizando scrcpy
+        </a>
+    </p>
+    <p class="prev-post-date">
+        julio 21, 2020
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/uso-de-venv-con-python3/">
+            :
+            Uso de venv con Python3
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            febrero 20, 2021
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#instalación">Instalación</a></li>
+    <li><a href="#gestión-de-cajas">Gestión de cajas</a>
+      <ul>
+        <li><a href="#catálogo">Catálogo</a></li>
+        <li><a href="#descargar-una-caja-manualmente">Descargar una caja manualmente</a></li>
+        <li><a href="#listar-las-cajas-disponibles-localmente">Listar las cajas disponibles localmente</a></li>
+        <li><a href="#remover-una-caja-disponible-localmente">Remover una caja disponible localmente</a></li>
+      </ul>
+    </li>
+    <li><a href="#creación-de-una-máquina-virtual">Creación de una máquina virtual</a></li>
+    <li><a href="#gestionar-las-máquinas-virtuales">Gestionar las máquinas virtuales</a>
+      <ul>
+        <li><a href="#iniciar-la-máquina-virtual">Iniciar la máquina virtual</a></li>
+        <li><a href="#detener-la-máquina-virtual">Detener la máquina virtual</a></li>
+        <li><a href="#recargar-la-máquina-virtual">Recargar la máquina virtual</a></li>
+        <li><a href="#destruir-la-máquina-virtual">Destruir la máquina virtual</a></li>
+        <li><a href="#suspenderreanudar-la-máquina-virtual">Suspender/reanudar la máquina virtual</a></li>
+        <li><a href="#conectarse-a-la-máquina-virtual">Conectarse a la máquina virtual</a></li>
+      </ul>
+    </li>
+    <li><a href="#consultar-acerca-de-las-máquinas-virtuales">Consultar acerca de las máquinas virtuales</a>
+      <ul>
+        <li><a href="#consultar-la-información-general">Consultar la información general</a></li>
+        <li><a href="#consultar-la-información-específica">Consultar la información específica</a></li>
+        <li><a href="#consultar-los-puertos-redirigidos">Consultar los puertos redirigidos</a></li>
+      </ul>
+    </li>
+    <li><a href="#recursos">Recursos</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 Dimensionally transcendental</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

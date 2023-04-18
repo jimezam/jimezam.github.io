@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>venv on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/venv/</link>
+    <description>Recent content in venv on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 20 Feb 2021 23:06:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/venv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uso de venv con Python3</title>
+      <link>https://jimezam.github.io/posts/uso-de-venv-con-python3/</link>
+      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/uso-de-venv-con-python3/</guid>
+      <description>Introducción Un ambiente virtual es un ambiente de trabajo de Python que separa al intérprete, librerías y scripts de manera independiente de otros proyectos. Físicamente es un directorio en el sistema de archivos que almacena los archivos relacionados.
+Cuando se instalan paquetes y el ambiente virtual se encuentra activo, los paquetes se almacenarán en el directorio del ambiente virtual en lugar de ir al ambiente system (buena práctica). De la misma manera, si se ejecuta una aplicación estando activo un ambiente virtual, las librerías que serán tenidas en cuenta serán precisamente las contenidas en él.</description>
+    </item>
+    
+  </channel>
+</rss>

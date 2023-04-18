@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/android/</link>
+    <description>Recent content in android on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 21 Jul 2020 11:52:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Espejo de la pantalla de Android en Linux Ubuntu utilizando scrcpy</title>
+      <link>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/</link>
+      <pubDate>Tue, 21 Jul 2020 11:52:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/</guid>
+      <description>Introducción scrcpy es una herramienta hecha por los mismos creadores de Genymobile y disponible para Linux, Windows y MacOS que permite visualizar desde el PC la pantalla del teléfono móvil que se encuentre conectado, de manera similar a como se experimentó [anteriormente con FFMpeg]({% post_url blog/2020-06-20-espejo-de-la-pantalla-de-Android-en-linux-ubuntu-utilizando-ffmpeg %}). Adicionalmente este software incluye la posibilidad de interactúar con el teléfono desde el PC y la posibilidad de copiar &amp;amp; pegar.
+Según los autores, los objetivos de diseño de la aplicación son los siguientes.</description>
+    </item>
+    
+    <item>
+      <title>Espejo de la pantalla de Android en Linux Utilizando FFmpeg</title>
+      <link>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/</link>
+      <pubDate>Sat, 20 Jun 2020 18:55:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/</guid>
+      <description>Introducción En esta publicación se describen los pasos necesarios para visualizar (mirror) la pantalla de un teléfono Android conectado a través del puerto USB a un computador con Linux Ubuntu. Esta visualización es de sólo lectura, es decir, no permite interactuar con el teléfono desde el computador, solamente visualizar lo que en un momento determinado se encuentre desplegando en su pantalla.
+Prerequisitos Se requiere la instalación del Android Debug Bridge (adb), FFmpeg y de un cliente de video, ya sea ffplay (incluido en el paquete anterior) o mplayer.</description>
+    </item>
+    
+  </channel>
+</rss>

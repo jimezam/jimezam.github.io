@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/linux/</link>
+    <description>Recent content in linux on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 20 Feb 2021 23:06:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uso de venv con Python3</title>
+      <link>https://jimezam.github.io/posts/uso-de-venv-con-python3/</link>
+      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/uso-de-venv-con-python3/</guid>
+      <description>Introducción Un ambiente virtual es un ambiente de trabajo de Python que separa al intérprete, librerías y scripts de manera independiente de otros proyectos. Físicamente es un directorio en el sistema de archivos que almacena los archivos relacionados.
+Cuando se instalan paquetes y el ambiente virtual se encuentra activo, los paquetes se almacenarán en el directorio del ambiente virtual en lugar de ir al ambiente system (buena práctica). De la misma manera, si se ejecuta una aplicación estando activo un ambiente virtual, las librerías que serán tenidas en cuenta serán precisamente las contenidas en él.</description>
+    </item>
+    
+    <item>
+      <title>Primeros pasos con Vagrant</title>
+      <link>https://jimezam.github.io/posts/primeros-pasos-con-vagrant/</link>
+      <pubDate>Fri, 29 Jan 2021 21:17:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/primeros-pasos-con-vagrant/</guid>
+      <description>Introducción Vagrant es un gestor de máquinas virtuales que soporta múltiples proveedores (entre ellos Virtualbox) facilitando su construcción (mediante el archivo Vagrantfile), gestión y aprovisionamiento. HashiCorp, la empresa detrás de Vagrant, mantiene un catálogo en línea de imágenes predefinidas que agilizan la creación de las máquinas virtuales.
+En la presente publicación se reseñan los comandos necesarios para realizar la instalación, gestión de cajas, creación y gestión de máquinas virtuales, así como consultar su información.</description>
+    </item>
+    
+    <item>
+      <title>Espejo de la pantalla de Android en Linux Ubuntu utilizando scrcpy</title>
+      <link>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/</link>
+      <pubDate>Tue, 21 Jul 2020 11:52:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/</guid>
+      <description>Introducción scrcpy es una herramienta hecha por los mismos creadores de Genymobile y disponible para Linux, Windows y MacOS que permite visualizar desde el PC la pantalla del teléfono móvil que se encuentre conectado, de manera similar a como se experimentó [anteriormente con FFMpeg]({% post_url blog/2020-06-20-espejo-de-la-pantalla-de-Android-en-linux-ubuntu-utilizando-ffmpeg %}). Adicionalmente este software incluye la posibilidad de interactúar con el teléfono desde el PC y la posibilidad de copiar &amp;amp; pegar.
+Según los autores, los objetivos de diseño de la aplicación son los siguientes.</description>
+    </item>
+    
+    <item>
+      <title>Instalación básica de OpenCV para Python utilizando pip en Linux</title>
+      <link>https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/</link>
+      <pubDate>Wed, 01 Jul 2020 15:55:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/</guid>
+      <description>Introducción En esta publicación se describen los pasos necesarios para instalar OpenCV para Python 3 en Linux Ubuntu/Mint 20 utilizando pip.
+Estos paquetes se consideran no oficiales ya que desde OpenCV.org se pueden descargar las fuentes del proyecto para su compilación personalizada. A través de pip básicamente se pueden obtener cuatro versiones diferentes.
+opencv-python: sólo incluye los módulos principales. opencv-contrib-python: incluye módulos no libres además de los módulos principales. (Recomendado) opencv-python-headless: sólo módulos principales pero sin funcionalidades de interfaz de usuario.</description>
+    </item>
+    
+    <item>
+      <title>Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM</title>
+      <link>https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/</link>
+      <pubDate>Tue, 30 Jun 2020 02:26:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/</guid>
+      <description>Introducción En esta publicación se describen los pasos necesarios para instalar distintas versiones de MacOS en una máquina virtual KVM en Linux Ubuntu/Mint 20 con el fin de explorar las capacidades de virtualización del sistema operativo.
+Para esto se utilizan los scripts provistos por el proyecto macOS-Simple-KVM, los cuales facilitan en gran medida este proceso.
+Requerimientos Procesador Intel o AMD con capacidad de virtualización (SSE 4.2). Se sugiere como un Ivy Bridge (o posterior), Xeon o Ryzen.</description>
+    </item>
+    
+    <item>
+      <title>Espejo de la pantalla de Android en Linux Utilizando FFmpeg</title>
+      <link>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/</link>
+      <pubDate>Sat, 20 Jun 2020 18:55:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/</guid>
+      <description>Introducción En esta publicación se describen los pasos necesarios para visualizar (mirror) la pantalla de un teléfono Android conectado a través del puerto USB a un computador con Linux Ubuntu. Esta visualización es de sólo lectura, es decir, no permite interactuar con el teléfono desde el computador, solamente visualizar lo que en un momento determinado se encuentre desplegando en su pantalla.
+Prerequisitos Se requiere la instalación del Android Debug Bridge (adb), FFmpeg y de un cliente de video, ya sea ffplay (incluido en el paquete anterior) o mplayer.</description>
+    </item>
+    
+  </channel>
+</rss>

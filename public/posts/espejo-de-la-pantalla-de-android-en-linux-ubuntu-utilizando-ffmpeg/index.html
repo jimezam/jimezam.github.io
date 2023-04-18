@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Espejo de la pantalla de Android en Linux Utilizando FFmpeg</title>
+    <meta name="description" content="Bigger on the inside">
+    <meta name="keywords" content='blog, software, development, linux, android, ffmpeg, mobile'>
+
+    <meta property="og:url" content="https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Espejo de la pantalla de Android en Linux Utilizando FFmpeg">
+    <meta property="og:description" content="Bigger on the inside">
+    <meta property="og:image" content="https://jimezam.github.io/images/logo.png">
+    <meta property="og:image:secure_url" content="https://jimezam.github.io/images/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Espejo de la pantalla de Android en Linux Utilizando FFmpeg">
+    <meta name="twitter:description" content="Bigger on the inside">
+    <meta property="twitter:domain" content="https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/">
+    <meta property="twitter:url" content="https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/">
+    <meta name="twitter:image" content="https://jimezam.github.io/images/logo.png">
+
+    
+    <link rel="canonical" href="https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-ffmpeg/" />
+
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://jimezam.github.io//css/dark.css">
+
+    <script src="https://jimezam.github.io//js/svg-injector.min.js"></script>
+    <script src="https://jimezam.github.io//js/feather-icons.min.js"></script>
+    <script src="https://jimezam.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="/css/my_styles.css">
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://jimezam.github.io/">
+                <img src="https://jimezam.github.io/images/logo.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://jimezam.github.io/">Jorge I. Meza</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Espejo de la pantalla de Android en Linux Utilizando FFmpeg</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            junio 20, 2020
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/android">android</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/ffmpeg">ffmpeg</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/mobile">mobile</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="introducción">Introducción</h1>
+<figure><img src="Android_Launcher.png#floatright"
+         alt="Launcher de Android" width="130"/>
+</figure>
+
+<p>En esta publicación se describen los pasos necesarios para visualizar (<em>mirror</em>) la pantalla de un teléfono Android conectado a través del puerto USB a un computador con Linux Ubuntu.  Esta visualización es de sólo lectura, es decir, no permite interactuar con el teléfono desde el computador, solamente visualizar lo que en un momento determinado se encuentre desplegando en su pantalla.</p>
+<h1 id="prerequisitos">Prerequisitos</h1>
+<p>Se requiere la instalación del <code>Android Debug Bridge (adb)</code>, <code>FFmpeg</code> y de un cliente de video, ya sea <code>ffplay</code> (incluido en el paquete anterior) o <code>mplayer</code>.</p>
+<pre tabindex="0"><code>$ sudo apt install android-tools-adb ffmpeg mplayer
+</code></pre><p>Se debe iniciar el servidor de ADB.</p>
+<pre tabindex="0"><code>$ adb start-server
+</code></pre><p>Se debe activar la opción de <em>Depuración por USB</em> del teléfono Android a través del menú de <em>Herramientas del desarrollador</em>.</p>
+<figure><img src="USB%20debugging%20menu%20option.png#floatright"
+         alt="Depuración por USB" width="350"/>
+</figure>
+
+<p>Se debe conectar el teléfono al computador a través del cable USB y finalmente se debe verificar que el computador ha reconocido al teléfono conectado.</p>
+<pre tabindex="0"><code>$ adb devices
+
+List of devices attached
+ce080808fcd01a0900	device
+</code></pre><h1 id="procedimiento">Procedimiento</h1>
+<p>La ejecución el comando se realiza de la siguiente manera.</p>
+<pre tabindex="0"><code>$ adb shell &#34;while true; do screenrecord --output-format=h264 --size=540x960 -; done&#34; | ffplay -framerate 60 -probesize 32 -sync video -
+</code></pre><p>O si se desea utilizar <code>mplayer</code> en lugar de <code>ffplay</code> sería de la siguiente forma.</p>
+<pre tabindex="0"><code>$ adb shell &#34;while true; do screenrecord --output-format=h264 --size=540x960 -; done&#34; | mplayer -framedrop -fps 600 -demuxer h264es - 
+</code></pre><p>Una copia de este <em>script</em> puede obtenerse mediante a través de este <a href="https://gist.github.com/jimezam/d64676aec76fe374e7809453cb47d292">gist</a>.</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/">
+            :
+            Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            junio 30, 2020
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#prerequisitos">Prerequisitos</a></li>
+    <li><a href="#procedimiento">Procedimiento</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 Dimensionally transcendental</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
