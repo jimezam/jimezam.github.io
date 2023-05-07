@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Instalación básica de OpenCV para Python utilizando pip en Linux</title>
+    <meta name="description" content="Bigger on the inside">
+    <meta name="keywords" content='blog, software, development, linux, opencv, pip, python'>
+
+    <meta property="og:url" content="https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Instalación básica de OpenCV para Python utilizando pip en Linux">
+    <meta property="og:description" content="Bigger on the inside">
+    <meta property="og:image" content="https://jimezam.github.io/images/logo.png">
+    <meta property="og:image:secure_url" content="https://jimezam.github.io/images/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Instalación básica de OpenCV para Python utilizando pip en Linux">
+    <meta name="twitter:description" content="Bigger on the inside">
+    <meta property="twitter:domain" content="https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/">
+    <meta property="twitter:url" content="https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/">
+    <meta name="twitter:image" content="https://jimezam.github.io/images/logo.png">
+
+    
+    <link rel="canonical" href="https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/" />
+
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://jimezam.github.io//css/dark.css">
+
+    <script src="https://jimezam.github.io//js/svg-injector.min.js"></script>
+    <script src="https://jimezam.github.io//js/feather-icons.min.js"></script>
+    <script src="https://jimezam.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="/css/my_styles.css">
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://jimezam.github.io/">
+                <img src="https://jimezam.github.io/images/logo.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://jimezam.github.io/">Jorge I. Meza</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Instalación básica de OpenCV para Python utilizando pip en Linux</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            julio 1, 2020
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/opencv">opencv</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/pip">pip</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/python">python</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h2 id="introducción">Introducción</h2>
+<p>En esta publicación se describen los pasos necesarios para instalar OpenCV para Python 3 en Linux Ubuntu/Mint 20 utilizando <code>pip</code>.</p>
+<p>Estos paquetes se consideran no oficiales ya que desde <a href="https://opencv.org/releases/">OpenCV.org</a> se pueden descargar las fuentes del proyecto para su compilación personalizada.  A través de <code>pip</code> básicamente se pueden obtener cuatro versiones diferentes.</p>
+<ul>
+<li><code>opencv-python</code>: sólo incluye los módulos principales.</li>
+<li><code>opencv-contrib-python</code>: incluye módulos no libres además de los módulos principales. <strong>(Recomendado)</strong></li>
+<li><code>opencv-python-headless</code>: sólo módulos principales pero sin funcionalidades de interfaz de usuario.</li>
+<li><code>opencv-contrib-python-headless</code>: módulos principales y módulos no libres sin funcionalidades de interfaz de usuario.</li>
+</ul>
+<p>La versión recomendada es <code>opencv-contrib-python</code> ya que incluye la mayor cantidad de algoritmos disponibles para su uso.</p>
+<h2 id="procedimiento">Procedimiento</h2>
+<p>Instalar Python 3.</p>
+<pre tabindex="0"><code>$ sudo apt install python3
+</code></pre><p>Instalar <code>pip</code>.</p>
+<pre tabindex="0"><code>$ sudo apt install python3-pip
+</code></pre><p>Instalar la librería de OpenCV.</p>
+<pre tabindex="0"><code>$ pip install opencv-contrib-python
+</code></pre><p>Instalar NumPY.</p>
+<pre tabindex="0"><code>$ pip install numpy
+</code></pre><h2 id="verificación">Verificación</h2>
+<pre tabindex="0"><code>$ python --version
+
+Python 3.8.2
+</code></pre><pre tabindex="0"><code>$ pip --version
+
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+</code></pre><pre tabindex="0"><code>$ python -c &#34;import cv2; print(cv2.__version__)&#34;
+
+4.2.0
+</code></pre><pre tabindex="0"><code>$ python -c &#34;import numpy as np; print(np.__version__)&#34;
+
+1.19.0
+</code></pre><h2 id="recursos">Recursos</h2>
+<ul>
+<li>OpenCV en pip<br>
+<a href="https://pypi.org/project/opencv-contrib-python/">https://pypi.org/project/opencv-contrib-python/</a></li>
+<li>NumPY en pip<br>
+<a href="https://pypi.org/project/numpy/">https://pypi.org/project/numpy/</a></li>
+</ul>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/instalaci%C3%B3n-de-macos-virtualizado-con-kvm-en-linux-utilizando-macos-simple-kvm/">
+            &#8592;
+            :
+            Instalación de MacOS virtualizado con KVM en Linux utilizando MacOS-Simple-KVM
+        </a>
+    </p>
+    <p class="prev-post-date">
+        junio 30, 2020
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/">
+            :
+            Espejo de la pantalla de Android en Linux Ubuntu utilizando scrcpy
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            julio 21, 2020
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introducción">Introducción</a></li>
+        <li><a href="#procedimiento">Procedimiento</a></li>
+        <li><a href="#verificación">Verificación</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 Dimensionally transcendental</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

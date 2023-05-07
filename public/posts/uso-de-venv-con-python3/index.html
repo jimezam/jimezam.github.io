@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Uso de venv con Python3</title>
+    <meta name="description" content="Bigger on the inside">
+    <meta name="keywords" content='blog, software, development, linux, venv, pip, python'>
+
+    <meta property="og:url" content="https://jimezam.github.io/posts/uso-de-venv-con-python3/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Uso de venv con Python3">
+    <meta property="og:description" content="Bigger on the inside">
+    <meta property="og:image" content="https://jimezam.github.io/images/logo.png">
+    <meta property="og:image:secure_url" content="https://jimezam.github.io/images/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Uso de venv con Python3">
+    <meta name="twitter:description" content="Bigger on the inside">
+    <meta property="twitter:domain" content="https://jimezam.github.io/posts/uso-de-venv-con-python3/">
+    <meta property="twitter:url" content="https://jimezam.github.io/posts/uso-de-venv-con-python3/">
+    <meta name="twitter:image" content="https://jimezam.github.io/images/logo.png">
+
+    
+    <link rel="canonical" href="https://jimezam.github.io/posts/uso-de-venv-con-python3/" />
+
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://jimezam.github.io//css/dark.css">
+
+    <script src="https://jimezam.github.io//js/svg-injector.min.js"></script>
+    <script src="https://jimezam.github.io//js/feather-icons.min.js"></script>
+    <script src="https://jimezam.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="/css/my_styles.css">
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://jimezam.github.io/">
+                <img src="https://jimezam.github.io/images/logo.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://jimezam.github.io/">Jorge I. Meza</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Uso de venv con Python3</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            febrero 20, 2021
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/venv">venv</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/pip">pip</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/python">python</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="introducción">Introducción</h1>
+<p>Un ambiente virtual es un ambiente de trabajo de Python que separa al intérprete, librerías y <em>scripts</em> de manera independiente de otros proyectos.  Físicamente es un directorio en el sistema de archivos que almacena los archivos relacionados.</p>
+<p>Cuando se instalan paquetes y el ambiente virtual se encuentra activo, los paquetes se almacenarán en el directorio del ambiente virtual en lugar de ir al ambiente <code>system</code> (buena práctica).  De la misma manera, si se ejecuta una aplicación estando activo un ambiente virtual, las librerías que serán tenidas en cuenta serán precisamente las contenidas en él.</p>
+<h1 id="creación-del-ambiente-virtual">Creación del ambiente virtual</h1>
+<p>La sintáxis general para la creación de un ambiente virtual es la siguiente.</p>
+<pre tabindex="0"><code>$ python -m venv /path/to/NOMBRE
+</code></pre><p>Siendo <code>/path/to/</code> la ruta donde se almacenarán los diferentes ambientes virtuales y <code>NOMBRE</code> el identificador que se le asignará al ambiente que se está creando.</p>
+<h1 id="activación-del-ambiente-virtual">Activación del ambiente virtual</h1>
+<p>Antes de poder utilizar el ambiente virtual es necesario activarlo.  Sólo podrá haber un ambiente activo a la vez.  Para activar el ambiente virtual en Bash/zsh es necesario ejecutar el siguiente comando.</p>
+<pre tabindex="0"><code>$ source /path/to/NOMBRE/bin/activate
+</code></pre><p>Otros <em>shells</em> o plataformas se pueden activar de la siguiente manera.</p>
+<table>
+<thead>
+<tr>
+<th>Plataforma</th>
+<th>Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fish</td>
+<td><code>$ source /path/to/NOMBRE/bin/activate.fish</code></td>
+</tr>
+<tr>
+<td>csh</td>
+<td><code>$ source /path/to/NOMBRE/bin/activate.csh</code></td>
+</tr>
+<tr>
+<td>Windows cmd</td>
+<td><code>&gt; \path\to\NOMBRE\Scripts\activate.bat</code></td>
+</tr>
+<tr>
+<td>PowerShell</td>
+<td><code>&gt; \path\to\NOMBRE\Scripts\Activate.ps1</code></td>
+</tr>
+<tr>
+<td>PowerShell Core</td>
+<td><code>$ /path/to/NOMBRE/bin/Activate.ps1</code></td>
+</tr>
+</tbody>
+</table>
+<p>Una vez el ambiente virtual se encuentra activo, la variable <code>VIRTUAL_ENV</code> indicará la ruta del ambiente virtual activo y el <em>prompt</em> del <em>shell</em> reflejará su nombre.</p>
+<pre tabindex="0"><code>(NOMBRE) educacion@silver:~$ 
+</code></pre><h1 id="instalación-de-librerías">Instalación de librerías</h1>
+<p>Las librerías que se instalen mientras el ambiente virtual se encuentra activo, se almacenarán directamente en él.  Para instalar las librerías se debe utilizar el gestor de librerías de su preferencia, como Anaconda o Pip.</p>
+<h1 id="desactivar-el-ambiente-virtual">Desactivar el ambiente virtual</h1>
+<p>Para desactivar el ambiente virtual se debe ejecutar el siguiente comando.</p>
+<pre tabindex="0"><code>$ deactivate
+</code></pre><h1 id="remover-el-ambiente-virtual">Remover el ambiente virtual</h1>
+<p>Para remover para siempre el ambiente virtual sólo se requiere eliminar el directorio en el cual fue instalado: <code>/path/to/NOMBRE</code>.</p>
+<h1 id="recursos">Recursos</h1>
+<ol>
+<li>Virtual Environments and Packages<br>
+<a href="https://docs.python.org/3/tutorial/venv.html">https://docs.python.org/3/tutorial/venv.html</a></li>
+</ol>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/primeros-pasos-con-vagrant/">
+            &#8592;
+            :
+            Primeros pasos con Vagrant
+        </a>
+    </p>
+    <p class="prev-post-date">
+        enero 29, 2021
+    </p>
+</div>
+
+
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#creación-del-ambiente-virtual">Creación del ambiente virtual</a></li>
+    <li><a href="#activación-del-ambiente-virtual">Activación del ambiente virtual</a></li>
+    <li><a href="#instalación-de-librerías">Instalación de librerías</a></li>
+    <li><a href="#desactivar-el-ambiente-virtual">Desactivar el ambiente virtual</a></li>
+    <li><a href="#remover-el-ambiente-virtual">Remover el ambiente virtual</a></li>
+    <li><a href="#recursos">Recursos</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 Dimensionally transcendental</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

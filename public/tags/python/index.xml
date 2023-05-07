@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/python/</link>
+    <description>Recent content in python on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 20 Feb 2021 23:06:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uso de venv con Python3</title>
+      <link>https://jimezam.github.io/posts/uso-de-venv-con-python3/</link>
+      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/uso-de-venv-con-python3/</guid>
+      <description>Introducción Un ambiente virtual es un ambiente de trabajo de Python que separa al intérprete, librerías y scripts de manera independiente de otros proyectos. Físicamente es un directorio en el sistema de archivos que almacena los archivos relacionados.
+Cuando se instalan paquetes y el ambiente virtual se encuentra activo, los paquetes se almacenarán en el directorio del ambiente virtual en lugar de ir al ambiente system (buena práctica). De la misma manera, si se ejecuta una aplicación estando activo un ambiente virtual, las librerías que serán tenidas en cuenta serán precisamente las contenidas en él.</description>
+    </item>
+    
+    <item>
+      <title>Instalación básica de OpenCV para Python utilizando pip en Linux</title>
+      <link>https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/</link>
+      <pubDate>Wed, 01 Jul 2020 15:55:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/instalaci%C3%B3n_b%C3%A1sica_de_opencv_para_python_utilizando_pip_en_linux/</guid>
+      <description>Introducción En esta publicación se describen los pasos necesarios para instalar OpenCV para Python 3 en Linux Ubuntu/Mint 20 utilizando pip.
+Estos paquetes se consideran no oficiales ya que desde OpenCV.org se pueden descargar las fuentes del proyecto para su compilación personalizada. A través de pip básicamente se pueden obtener cuatro versiones diferentes.
+opencv-python: sólo incluye los módulos principales. opencv-contrib-python: incluye módulos no libres además de los módulos principales. (Recomendado) opencv-python-headless: sólo módulos principales pero sin funcionalidades de interfaz de usuario.</description>
+    </item>
+    
+  </channel>
+</rss>

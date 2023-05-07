@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/windows/</link>
+    <description>Recent content in windows on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 29 Jan 2021 21:17:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primeros pasos con Vagrant</title>
+      <link>https://jimezam.github.io/posts/primeros-pasos-con-vagrant/</link>
+      <pubDate>Fri, 29 Jan 2021 21:17:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/primeros-pasos-con-vagrant/</guid>
+      <description>Introducción Vagrant es un gestor de máquinas virtuales que soporta múltiples proveedores (entre ellos Virtualbox) facilitando su construcción (mediante el archivo Vagrantfile), gestión y aprovisionamiento. HashiCorp, la empresa detrás de Vagrant, mantiene un catálogo en línea de imágenes predefinidas que agilizan la creación de las máquinas virtuales.
+En la presente publicación se reseñan los comandos necesarios para realizar la instalación, gestión de cajas, creación y gestión de máquinas virtuales, así como consultar su información.</description>
+    </item>
+    
+    <item>
+      <title>Espejo de la pantalla de Android en Linux Ubuntu utilizando scrcpy</title>
+      <link>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/</link>
+      <pubDate>Tue, 21 Jul 2020 11:52:00 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/espejo-de-la-pantalla-de-android-en-linux-ubuntu-utilizando-scrcpy/</guid>
+      <description>Introducción scrcpy es una herramienta hecha por los mismos creadores de Genymobile y disponible para Linux, Windows y MacOS que permite visualizar desde el PC la pantalla del teléfono móvil que se encuentre conectado, de manera similar a como se experimentó [anteriormente con FFMpeg]({% post_url blog/2020-06-20-espejo-de-la-pantalla-de-Android-en-linux-ubuntu-utilizando-ffmpeg %}). Adicionalmente este software incluye la posibilidad de interactúar con el teléfono desde el PC y la posibilidad de copiar &amp;amp; pegar.
+Según los autores, los objetivos de diseño de la aplicación son los siguientes.</description>
+    </item>
+    
+  </channel>
+</rss>
