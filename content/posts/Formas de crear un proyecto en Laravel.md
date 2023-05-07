@@ -1,5 +1,5 @@
 ---
-title: "Formas De Crear Un Nuevo Proyecto en Laravel"
+title: "Formas De Crear Un Proyecto en Laravel"
 date: 2023-05-07T00:13:33-05:00
 draft: false
 type: "post"
@@ -10,6 +10,8 @@ tags: ["laravel", "composer", "php", "docker"]
 ---
 
 # Introducción
+
+Existen diferentes maneras de crear un proyecto Laravel. En este artículo se revisan las tres principales formas.
 
 # Instalar Laravel localmente
 
@@ -44,3 +46,20 @@ $ curl -s "https://laravel.build/example-app?with=mysql,mailpit,selenium" | bash
 ```
 
 Esta opción tiene la ventaja de que no es necesario tener instalada ninguna herramienta de desarrollo en el equipo anfitrión además de Docker y Visual Studio Code (o cualquier IDE).  La ejecución de comandos en el proyecto se realiza a través de [Sail](https://laravel.com/docs/master/sail).
+
+La variable `with` permite establecer las aplicaciones de soporte que serán instaladaS.
+
+- mysql *
+- pgsql,
+- mariadb,
+- redis *
+- mailpit *
+- memcached,
+- meilisearch *
+- minio,
+- selenium *
+
+# Recursos
+
+- Laravel Documentation | Installation  
+  https://laravel.com/docs/10.x/installation#getting-started-on-linux
