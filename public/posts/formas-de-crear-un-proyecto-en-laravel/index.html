@@ -17,26 +17,26 @@
     
 
     
-    <title>Uso de venv con Python3</title>
+    <title>Formas De Crear Un Proyecto en Laravel</title>
     <meta name="description" content="Bigger on the inside">
-    <meta name="keywords" content='blog, software, development, linux, venv, pip, python'>
+    <meta name="keywords" content='blog, software, development, linux, laravel, composer, php, docker'>
 
-    <meta property="og:url" content="https://jimezam.github.io/posts/uso-de-venv-con-python3/">
+    <meta property="og:url" content="https://jimezam.github.io/posts/formas-de-crear-un-proyecto-en-laravel/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Uso de venv con Python3">
+    <meta property="og:title" content="Formas De Crear Un Proyecto en Laravel">
     <meta property="og:description" content="Bigger on the inside">
     <meta property="og:image" content="https://jimezam.github.io/images/logo.png">
     <meta property="og:image:secure_url" content="https://jimezam.github.io/images/logo.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Uso de venv con Python3">
+    <meta name="twitter:title" content="Formas De Crear Un Proyecto en Laravel">
     <meta name="twitter:description" content="Bigger on the inside">
-    <meta property="twitter:domain" content="https://jimezam.github.io/posts/uso-de-venv-con-python3/">
-    <meta property="twitter:url" content="https://jimezam.github.io/posts/uso-de-venv-con-python3/">
+    <meta property="twitter:domain" content="https://jimezam.github.io/posts/formas-de-crear-un-proyecto-en-laravel/">
+    <meta property="twitter:url" content="https://jimezam.github.io/posts/formas-de-crear-un-proyecto-en-laravel/">
     <meta name="twitter:image" content="https://jimezam.github.io/images/logo.png">
 
     
-    <link rel="canonical" href="https://jimezam.github.io/posts/uso-de-venv-con-python3/" />
+    <link rel="canonical" href="https://jimezam.github.io/posts/formas-de-crear-un-proyecto-en-laravel/" />
 
     <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/main.css">
@@ -130,21 +130,21 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
-        <h1>Uso de venv con Python3</h1>
+        <h1>Formas De Crear Un Proyecto en Laravel</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
-            febrero 20, 2021
+            mayo 7, 2023
         </p>
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="https://jimezam.github.io/tags/linux">linux</a></li>
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/laravel">laravel</a></li>
         
-            <li class="post-tag"><a href="https://jimezam.github.io/tags/venv">venv</a></li>
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/composer">composer</a></li>
         
-            <li class="post-tag"><a href="https://jimezam.github.io/tags/pip">pip</a></li>
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/php">php</a></li>
         
-            <li class="post-tag"><a href="https://jimezam.github.io/tags/python">python</a></li>
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/docker">docker</a></li>
         
         </ul>
     </div>
@@ -152,60 +152,38 @@
     <div class="post-content">
         <p>
             <h1 id="introducción">Introducción</h1>
-<p>Un ambiente virtual es un ambiente de trabajo de Python que separa al intérprete, librerías y <em>scripts</em> de manera independiente de otros proyectos.  Físicamente es un directorio en el sistema de archivos que almacena los archivos relacionados.</p>
-<p>Cuando se instalan paquetes y el ambiente virtual se encuentra activo, los paquetes se almacenarán en el directorio del ambiente virtual en lugar de ir al ambiente <code>system</code> (buena práctica).  De la misma manera, si se ejecuta una aplicación estando activo un ambiente virtual, las librerías que serán tenidas en cuenta serán precisamente las contenidas en él.</p>
-<h1 id="creación-del-ambiente-virtual">Creación del ambiente virtual</h1>
-<p>La sintáxis general para la creación de un ambiente virtual es la siguiente.</p>
-<pre tabindex="0"><code>$ python -m venv /path/to/NOMBRE
-</code></pre><p>Siendo <code>/path/to/</code> la ruta donde se almacenarán los diferentes ambientes virtuales y <code>NOMBRE</code> el identificador que se le asignará al ambiente que se está creando.</p>
-<h1 id="activación-del-ambiente-virtual">Activación del ambiente virtual</h1>
-<p>Antes de poder utilizar el ambiente virtual es necesario activarlo.  Sólo podrá haber un ambiente activo a la vez.  Para activar el ambiente virtual en Bash/zsh es necesario ejecutar el siguiente comando.</p>
-<pre tabindex="0"><code>$ source /path/to/NOMBRE/bin/activate
-</code></pre><p>Otros <em>shells</em> o plataformas se pueden activar de la siguiente manera.</p>
-<table>
-<thead>
-<tr>
-<th>Plataforma</th>
-<th>Comando</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fish</td>
-<td><code>$ source /path/to/NOMBRE/bin/activate.fish</code></td>
-</tr>
-<tr>
-<td>csh</td>
-<td><code>$ source /path/to/NOMBRE/bin/activate.csh</code></td>
-</tr>
-<tr>
-<td>Windows cmd</td>
-<td><code>&gt; \path\to\NOMBRE\Scripts\activate.bat</code></td>
-</tr>
-<tr>
-<td>PowerShell</td>
-<td><code>&gt; \path\to\NOMBRE\Scripts\Activate.ps1</code></td>
-</tr>
-<tr>
-<td>PowerShell Core</td>
-<td><code>$ /path/to/NOMBRE/bin/Activate.ps1</code></td>
-</tr>
-</tbody>
-</table>
-<p>Una vez el ambiente virtual se encuentra activo, la variable <code>VIRTUAL_ENV</code> indicará la ruta del ambiente virtual activo y el <em>prompt</em> del <em>shell</em> reflejará su nombre.</p>
-<pre tabindex="0"><code>(NOMBRE) educacion@silver:~$ 
-</code></pre><h1 id="instalación-de-librerías">Instalación de librerías</h1>
-<p>Las librerías que se instalen mientras el ambiente virtual se encuentra activo, se almacenarán directamente en él.  Para instalar las librerías se debe utilizar el gestor de librerías de su preferencia, como Anaconda o Pip.</p>
-<h1 id="desactivar-el-ambiente-virtual">Desactivar el ambiente virtual</h1>
-<p>Para desactivar el ambiente virtual se debe ejecutar el siguiente comando.</p>
-<pre tabindex="0"><code>$ deactivate
-</code></pre><h1 id="remover-el-ambiente-virtual">Remover el ambiente virtual</h1>
-<p>Para remover para siempre el ambiente virtual sólo se requiere eliminar el directorio en el cual fue instalado: <code>/path/to/NOMBRE</code>.</p>
+<p>Existen diferentes maneras de crear un proyecto Laravel. En este artículo se revisan las tres principales formas.</p>
+<h1 id="instalar-laravel-localmente">Instalar Laravel localmente</h1>
+<p>Consiste en instalar los archivos del <em>framework</em> localmente como se muestra a continuación.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ composer global require laravel/installer
+</span></span></code></pre></div><p>Para crear con ellos a cualquier proyecto que se requiera.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ laravel new example-app
+</span></span></code></pre></div><p>Esta opción tiene la ventaja de que la creación de nuevos proyectos es muy rápida y no requiere del acceso a Internet, sin embargo el desarrollador sólo podrá crear proyectos de la versión de Laravel que tenga instalada.  Si se desea crear proyectos con una versión más nueva, tendrá que actualizar primero la versión local.</p>
+<h1 id="utilizando-composer">Utilizando Composer</h1>
+<p>La segunda opción y más común, consiste en utilizar <code>composer</code> para crear los nuevos proyectos.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ composer create-project laravel/laravel example-app
+</span></span></code></pre></div><p>Esta opción requiere del acceso a Internet y toma algunos minutos mientras se descargan los paquetes requeridos.  La ventaja que tiene es que permite crear proyectos con la versión más actual de Laravel o con la que se desee.</p>
+<h1 id="utilizando-docker">Utilizando Docker</h1>
+<p>Esta tercera opción permite crear un proyecto Laravel para que se ejecute directamente en un contenedor Docker.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl -s <span style="color:#b8bb26">&#34;https://laravel.build/example-app?with=mysql,mailpit,selenium&#34;</span> | bash
+</span></span></code></pre></div><p>Esta opción tiene la ventaja de que no es necesario tener instalada ninguna herramienta de desarrollo en el equipo anfitrión además de Docker y Visual Studio Code (o cualquier IDE).  La ejecución de comandos en el proyecto se realiza a través de <a href="https://laravel.com/docs/master/sail">Sail</a>.</p>
+<p>La variable <code>with</code> permite establecer las aplicaciones de soporte que serán instaladaS.</p>
+<ul>
+<li>mysql *</li>
+<li>pgsql,</li>
+<li>mariadb,</li>
+<li>redis *</li>
+<li>mailpit *</li>
+<li>memcached,</li>
+<li>meilisearch *</li>
+<li>minio,</li>
+<li>selenium *</li>
+</ul>
 <h1 id="recursos">Recursos</h1>
-<ol>
-<li>Virtual Environments and Packages<br>
-<a href="https://docs.python.org/3/tutorial/venv.html">https://docs.python.org/3/tutorial/venv.html</a></li>
-</ol>
+<ul>
+<li>Laravel Documentation | Installation<br>
+<a href="https://laravel.com/docs/10.x/installation#getting-started-on-linux">https://laravel.com/docs/10.x/installation#getting-started-on-linux</a></li>
+</ul>
 
         </p>
         
@@ -217,31 +195,18 @@
                 
 <div class="prev-post">
     <p>
-        <a href="/posts/primeros-pasos-con-vagrant/">
+        <a href="/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/">
             &#8592;
             :
-            Primeros pasos con Vagrant
+            Instalación de Docker en Ubuntu Linux
         </a>
     </p>
     <p class="prev-post-date">
-        enero 29, 2021
+        abril 18, 2023
     </p>
 </div>
 
 
-
-<div class="next-post">
-    <p>
-        <a href="/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/">
-            :
-            Instalación de Docker en Ubuntu Linux
-            &#8594;
-        </a>
-    </p>
-        <p class="next-post-date">
-            abril 18, 2023
-        </p>
-</div>
 
 
             
@@ -254,11 +219,9 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#creación-del-ambiente-virtual">Creación del ambiente virtual</a></li>
-    <li><a href="#activación-del-ambiente-virtual">Activación del ambiente virtual</a></li>
-    <li><a href="#instalación-de-librerías">Instalación de librerías</a></li>
-    <li><a href="#desactivar-el-ambiente-virtual">Desactivar el ambiente virtual</a></li>
-    <li><a href="#remover-el-ambiente-virtual">Remover el ambiente virtual</a></li>
+    <li><a href="#instalar-laravel-localmente">Instalar Laravel localmente</a></li>
+    <li><a href="#utilizando-composer">Utilizando Composer</a></li>
+    <li><a href="#utilizando-docker">Utilizando Docker</a></li>
     <li><a href="#recursos">Recursos</a></li>
   </ul>
 </nav>

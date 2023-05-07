@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 18 Apr 2023 01:24:18 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación de Docker en Ubuntu Linux</title>
+      <link>https://jimezam.github.io/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/</link>
+      <pubDate>Tue, 18 Apr 2023 01:24:18 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/</guid>
+      <description>Introducción En el presente artículo se detalla el proceso de instalación de Docker Engine en un Ubuntu Linux mediante el uso de un repositorio.
+Desinstalación Es recomendable desinstalar cualquier versión previa que se tenga de Docker mediante el siguiente comando.
+$ sudo apt-get remove docker docker-engine docker.io containerd runc Configuración del repositorio Permitir acceso a repositorios HTTPS $ sudo apt-get update $ sudo apt-get install \ ca-certificates \ curl \ gnupg Agregar la llave GPG del repositorio oficial $ sudo install -m 0755 -d /etc/apt/keyrings $ curl -fsSL https://download.</description>
+    </item>
+    
+  </channel>
+</rss>

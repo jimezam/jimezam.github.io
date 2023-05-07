@@ -6,13 +6,58 @@
     <description>Recent content in Tags on Jorge I. Meza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sat, 20 Feb 2021 23:06:00 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 May 2023 00:13:33 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>composer</title>
+      <link>https://jimezam.github.io/tags/composer/</link>
+      <pubDate>Sun, 07 May 2023 00:13:33 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/composer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://jimezam.github.io/tags/docker/</link>
+      <pubDate>Sun, 07 May 2023 00:13:33 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laravel</title>
+      <link>https://jimezam.github.io/tags/laravel/</link>
+      <pubDate>Sun, 07 May 2023 00:13:33 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://jimezam.github.io/tags/php/</link>
+      <pubDate>Sun, 07 May 2023 00:13:33 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/php/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>linux</title>
       <link>https://jimezam.github.io/tags/linux/</link>
-      <pubDate>Sat, 20 Feb 2021 23:06:00 -0500</pubDate>
+      <pubDate>Tue, 18 Apr 2023 01:24:18 -0500</pubDate>
       
       <guid>https://jimezam.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://jimezam.github.io/tags/ubuntu/</link>
+      <pubDate>Tue, 18 Apr 2023 01:24:18 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     

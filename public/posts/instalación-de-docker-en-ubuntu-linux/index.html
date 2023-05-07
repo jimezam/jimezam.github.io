@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Instalación de Docker en Ubuntu Linux</title>
+    <meta name="description" content="Bigger on the inside">
+    <meta name="keywords" content='blog, software, development, linux, docker, ubuntu'>
+
+    <meta property="og:url" content="https://jimezam.github.io/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Instalación de Docker en Ubuntu Linux">
+    <meta property="og:description" content="Bigger on the inside">
+    <meta property="og:image" content="https://jimezam.github.io/images/logo.png">
+    <meta property="og:image:secure_url" content="https://jimezam.github.io/images/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Instalación de Docker en Ubuntu Linux">
+    <meta name="twitter:description" content="Bigger on the inside">
+    <meta property="twitter:domain" content="https://jimezam.github.io/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/">
+    <meta property="twitter:url" content="https://jimezam.github.io/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/">
+    <meta name="twitter:image" content="https://jimezam.github.io/images/logo.png">
+
+    
+    <link rel="canonical" href="https://jimezam.github.io/posts/instalaci%C3%B3n-de-docker-en-ubuntu-linux/" />
+
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://jimezam.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://jimezam.github.io//css/dark.css">
+
+    <script src="https://jimezam.github.io//js/svg-injector.min.js"></script>
+    <script src="https://jimezam.github.io//js/feather-icons.min.js"></script>
+    <script src="https://jimezam.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="/css/my_styles.css">
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://jimezam.github.io/">
+                <img src="https://jimezam.github.io/images/logo.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://jimezam.github.io/">Jorge I. Meza</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://jimezam.github.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://jimezam.github.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/jimezam"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Instalación de Docker en Ubuntu Linux</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            abril 18, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/docker">docker</a></li>
+        
+            <li class="post-tag"><a href="https://jimezam.github.io/tags/ubuntu">ubuntu</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="introducción">Introducción</h1>
+<p>En el presente artículo se detalla el proceso de instalación de Docker Engine en un Ubuntu Linux mediante el uso de un repositorio.</p>
+<h1 id="desinstalación">Desinstalación</h1>
+<p>Es recomendable desinstalar cualquier versión previa que se tenga de Docker mediante el siguiente comando.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo apt-get remove docker docker-engine docker.io containerd runc
+</span></span></code></pre></div><h1 id="configuración-del-repositorio">Configuración del repositorio</h1>
+<h2 id="permitir-acceso-a-repositorios-https">Permitir acceso a repositorios HTTPS</h2>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo apt-get update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ sudo apt-get install <span style="color:#b8bb26">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b8bb26"></span>    ca-certificates <span style="color:#b8bb26">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b8bb26"></span>    curl <span style="color:#b8bb26">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b8bb26"></span>    gnupg
+</span></span></code></pre></div><h2 id="agregar-la-llave-gpg-del-repositorio-oficial">Agregar la llave GPG del repositorio oficial</h2>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo install -m <span style="color:#d3869b">0755</span> -d /etc/apt/keyrings
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ sudo chmod a+r /etc/apt/keyrings/docker.gpg
+</span></span></code></pre></div><h2 id="agregar-el-repositorio-oficial">Agregar el repositorio oficial</h2>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#fabd2f">echo</span> <span style="color:#b8bb26">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b8bb26"></span>  <span style="color:#b8bb26">&#34;deb [arch=&#34;</span><span style="color:#fe8019">$(</span>dpkg --print-architecture<span style="color:#fe8019">)</span><span style="color:#b8bb26">&#34; signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+</span></span></span><span style="display:flex;"><span><span style="color:#b8bb26">  &#34;</span><span style="color:#fe8019">$(</span>. /etc/os-release <span style="color:#fe8019">&amp;&amp;</span> <span style="color:#fabd2f">echo</span> <span style="color:#b8bb26">&#34;</span>$VERSION_CODENAME<span style="color:#b8bb26">&#34;</span><span style="color:#fe8019">)</span><span style="color:#b8bb26">&#34; stable&#34;</span> | <span style="color:#b8bb26">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b8bb26"></span>  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</span></span></code></pre></div><h1 id="instalación">Instalación</h1>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ sudo apt-get update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+</span></span></code></pre></div><h1 id="postinstalación">Postinstalación</h1>
+<p>Una vez instalados los paquetes, se recomienda realizar las siguientes tareas.</p>
+<ul>
+<li>
+<p>Agregar al usuario al grupo Docker</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ usermod -a -G writers quincy
+</span></span></code></pre></div></li>
+</ul>
+<h1 id="verificar-el-funcionamiento">Verificar el funcionamiento</h1>
+<p>Para verficiar que la pasada instalación de Docker fue exitosa, se debe crear y visualizar la salida de un contenedor <em>Hola Mundo</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo docker run hello-world
+</span></span></code></pre></div><p>La ejecución exitosa de este comando deberá mostrar una salida similar a la siguiente.</p>
+<pre tabindex="0"><code>Unable to find image &#39;hello-world:latest&#39; locally
+latest: Pulling from library/hello-world
+2db29710123e: Pull complete 
+Digest: sha256:4e83453afed1b4fa1a3500525091dbfca6ce1e66903fd4c01ff015dbcb1ba33e
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the &#34;hello-world&#34; image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre><h1 id="recursos">Recursos</h1>
+<ul>
+<li>Install Docker Engine on Ubuntu<br>
+<a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a></li>
+<li>Docker - samples overview<br>
+<a href="https://docs.docker.com/samples/">https://docs.docker.com/samples/</a></li>
+</ul>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/uso-de-venv-con-python3/">
+            &#8592;
+            :
+            Uso de venv con Python3
+        </a>
+    </p>
+    <p class="prev-post-date">
+        febrero 20, 2021
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/formas-de-crear-un-proyecto-en-laravel/">
+            :
+            Formas De Crear Un Proyecto en Laravel
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            mayo 7, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#desinstalación">Desinstalación</a></li>
+    <li><a href="#configuración-del-repositorio">Configuración del repositorio</a>
+      <ul>
+        <li><a href="#permitir-acceso-a-repositorios-https">Permitir acceso a repositorios HTTPS</a></li>
+        <li><a href="#agregar-la-llave-gpg-del-repositorio-oficial">Agregar la llave GPG del repositorio oficial</a></li>
+        <li><a href="#agregar-el-repositorio-oficial">Agregar el repositorio oficial</a></li>
+      </ul>
+    </li>
+    <li><a href="#instalación">Instalación</a></li>
+    <li><a href="#postinstalación">Postinstalación</a></li>
+    <li><a href="#verificar-el-funcionamiento">Verificar el funcionamiento</a></li>
+    <li><a href="#recursos">Recursos</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 Dimensionally transcendental</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

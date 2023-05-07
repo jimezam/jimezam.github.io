@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on Jorge I. Meza</title>
+    <link>https://jimezam.github.io/tags/php/</link>
+    <description>Recent content in php on Jorge I. Meza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 07 May 2023 00:13:33 -0500</lastBuildDate><atom:link href="https://jimezam.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Formas De Crear Un Proyecto en Laravel</title>
+      <link>https://jimezam.github.io/posts/formas-de-crear-un-proyecto-en-laravel/</link>
+      <pubDate>Sun, 07 May 2023 00:13:33 -0500</pubDate>
+      
+      <guid>https://jimezam.github.io/posts/formas-de-crear-un-proyecto-en-laravel/</guid>
+      <description>Introducción Existen diferentes maneras de crear un proyecto Laravel. En este artículo se revisan las tres principales formas.
+Instalar Laravel localmente Consiste en instalar los archivos del framework localmente como se muestra a continuación.
+$ composer global require laravel/installer Para crear con ellos a cualquier proyecto que se requiera.
+$ laravel new example-app Esta opción tiene la ventaja de que la creación de nuevos proyectos es muy rápida y no requiere del acceso a Internet, sin embargo el desarrollador sólo podrá crear proyectos de la versión de Laravel que tenga instalada.</description>
+    </item>
+    
+  </channel>
+</rss>
