@@ -68,7 +68,7 @@ Una vez instalados los paquetes, se recomienda realizar las siguientes tareas.
 * Agregar al usuario al grupo Docker
 
   ```bash
-  $ usermod -a -G writers quincy
+  $ sudo usermod -a -G docker $USER
   ```
 
 # Verificar el funcionamiento
